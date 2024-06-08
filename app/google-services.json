@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "5070210742",
+    "project_id": "cellphonetiu-14dae",
+    "storage_bucket": "cellphonetiu-14dae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5070210742:android:06c003ee38f1281dca8817",
+        "android_client_info": {
+          "package_name": "com.example.cellphonetiu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGdazRfnpRMhgc_YL82wYfRsZFsCl2RDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

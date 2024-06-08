@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:ignore="MissingConstraints"
+    android:background="@color/lightpink">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_1"
+        android:layout_width="330dp"
+        android:layout_height="450dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Sign in Form"
+                android:textColor="@color/lightpink"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/Input_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/background_edittext_login"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:hint="useremail"
+                android:padding="15dp"
+                android:textColorHint="@color/lightpink"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".9" />
+
+            <EditText
+                android:id="@+id/Input_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_edittext_login"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:hint="password"
+                android:padding="15dp"
+                android:textColorHint="@color/lightpink"
+                android:textSize="15sp"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Input_username"
+                app:layout_constraintWidth_percent=".9" />
+
+            <TextView
+                android:id="@+id/textview_forgotPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Forgot password ?"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Input_password" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/lightpink"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_forgotPW">
+
+                <Button
+                    android:id="@+id/btnsignin"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:background="@color/lightpink"
+                    android:text="SIGN IN"
+                    android:textColorHighlight="@color/lightpink"
+                    android:textColorLink="@color/lightpink"
+                    android:textCursorDrawable="@color/lightpink"
+                    android:textSize="25sp"
+                    app:layout_constraintWidth_percent=".5" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textview_notmeber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="25dp"
+                android:text="Not a member ?"
+                android:textColor="@color/lightpink"
+                android:textSize="15sp"
+                android:fontFamily="@font/inter_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/textview_signupnow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Sign up now"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/textview_notmeber"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
